@@ -1,0 +1,100 @@
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+    padding: 0
+}
+
+.container {
+    max-width: 1170px;
+    min-width: 480px;
+    margin: auto;
+}
+
+div.rows1 {
+    margin: 100px 0 0 400px;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.rows1>div{
+/*    float: left;*/
+/*    display: inline-block;*/
+    display: block;
+    width: 25%;
+}
+
+div.block-relativ {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    border: 5px solid #ccc;
+    border-bottom: 30px solid #ccc;
+    position: relative;
+}
+
+.rows1 figure img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.block-relativ .label4 figure::after {
+    content: 'Новинка';
+    display: block;
+    position: absolute;
+    padding: 1px 5px;
+    background: #ff0000;
+    color: #fff;
+    top: -15px;
+    right: -25px;
+    transform: rotate(25deg);
+}
+
+.block-relativ .label3 figure::after {
+    content: 'Новинка';
+    display: block;
+    position: absolute;
+    padding: 1px 5px;
+    background: #ff0000;
+    color: #fff;
+    top: -15px;
+    left: -25px;
+    transform: rotate(-25deg);
+}
+
+.block-relativ .label2 figure::after {
+    content: 'Новинка';
+    display: block;
+    position: absolute;
+    padding: 1px 5px;
+    background: #ff0000;
+    color: #fff;
+    bottom: -35px;
+    right: -25px;
+    transform: rotate(-25deg);
+}
+
+.block-relativ .label1 figure::after {
+    content: 'Новинка';
+    display: block;
+    position: absolute;
+    padding: 1px 5px;
+    background: #ff0000;
+    color: #fff;
+    bottom: -35px;
+    left: -25px;
+    transform: rotate(25deg);
+}
