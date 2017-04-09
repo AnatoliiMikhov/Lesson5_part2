@@ -27,8 +27,6 @@ div.rows1 {
 }
 
 .rows1>div{
-/*    float: left;*/
-/*    display: inline-block;*/
     display: block;
     width: 25%;
 }
@@ -38,7 +36,7 @@ div.block-relativ {
     position: relative;
 }
 
-figure {
+.rows1 figure {
     margin: 0;
     padding: 0;
     border: 5px solid #ccc;
@@ -97,4 +95,42 @@ figure {
     bottom: -35px;
     left: -25px;
     transform: rotate(25deg);
+}
+
+/*-----
+--Style galery with hover-
+---- */
+
+.rows2 {
+    margin-bottom: 30px;
+}
+
+.rows2 .dad {
+    float: left;
+    position: relative;
+    width: 25%;
+}
+
+.rows2 figure {
+    margin: 0;
+}
+
+.rows2 figure img {
+    width: 100%;
+    padding-right: 2px;
+}
+
+.rows2 figure.dad .opaticy {
+    background: #142251;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.25;
+}
+
+.rows2 figure.dad:hover .opaticy {
+    display: none;
 }
